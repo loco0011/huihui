@@ -626,13 +626,6 @@
             if (checkInterval) clearInterval(checkInterval);
         });
 
-        // Make button jump randomly every few seconds for extra fun
-        setInterval(() => {
-            if (Math.random() > 0.7) { // 30% chance every interval
-                moveNoButton();
-            }
-        }, 2000);
-
         // Track mouse position - make it more aggressive
         let mousePos = { x: 0, y: 0 };
         document.addEventListener('mousemove', (e) => {
